@@ -1541,7 +1541,7 @@ class ShellExecutor:
                     return
 
         # Check if it's an interactive command that needs PTY
-        interactive_commands = ['nano', 'vim', 'vi', 'emacs', 'top', 'htop', 'less', 'more', 'man', 'python', 'python3', 'ipython', 'ipython3', 'bash', 'sh', 'zsh', 'fish', 'sudo', 'su', 'doas']
+        interactive_commands = ['nano', 'vim', 'vi', 'emacs', 'top', 'htop', 'less', 'more', 'man', 'python', 'python3', 'ipython', 'ipython3', 'bash', 'sh', 'zsh', 'fish', 'sudo', 'su', 'doas', 'ssh', 'sftp']
         first_word = command.strip().split()[0] if command.strip() else ""
         
         if first_word in interactive_commands:
@@ -4391,3 +4391,4 @@ renderer.destroy()
 window.close()
 sdl2.SDL_Quit()
 print("Goodbye!")
+
