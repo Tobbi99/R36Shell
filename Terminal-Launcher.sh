@@ -99,7 +99,7 @@ install_dependencies() {
         echo "# This may take several minutes..."
         
         # Only install packages that are not already installed
-        PACKAGES="gdb libc6-dev libsdl2-dev linux-libc-dev g++ libsdl2-ttf-dev git python3 python3-venv python3-pip ninja-build cmake make i2c-tools usbutils fbcat fbset mmc-utils libglew-dev libegl1-mesa-dev libgl1-mesa-dev libgles2-mesa-dev libglu1-mesa-dev fonts-liberation"
+        PACKAGES="libsdl2-dev libsdl2-ttf-dev python3 python3-venv python3-pip fonts-liberation"
         
         TO_INSTALL=""
         for pkg in $PACKAGES; do
